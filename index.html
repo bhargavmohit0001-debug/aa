@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A&A Interior and Landscaping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for smooth button and section */
+    .btn-primary {
+      background-color: #2e7d32;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #1b4d20;
+    }
+
+    .hero-bg {
+      background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/867fe595-19b3-4609-af1c-5628852ed88c.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .feature-icon {
+      color: #2e7d32;
+    }
+
+    /* Contact form input focus */
+    .input-focus:focus {
+      border-color: #2e7d32;
+      box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.3);
+      outline: none;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-3">
+        <div class="text-2xl font-bold text-green-800 select-none">A&A Landscaping</div>
+      </div>
+      <nav class="space-x-6 hidden md:flex text-green-800 font-semibold">
+        <a href="#services" class="hover:text-green-600 transition">Services</a>
+        <a href="#projects" class="hover:text-green-600 transition">Projects</a>
+        <a href="#about" class="hover:text-green-600 transition">About</a>
+        <a href="#contact" class="hover:text-green-600 transition">Contact</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden focus:outline-none text-green-800" aria-label="Open Menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" /></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+      <nav class="flex flex-col p-4 space-y-3 text-green-800 font-semibold">
+        <a href="#services" class="hover:text-green-600 transition">Services</a>
+        <a href="#projects" class="hover:text-green-600 transition">Projects</a>
+        <a href="#about" class="hover:text-green-600 transition">About</a>
+        <a href="#contact" class="hover:text-green-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="hero-bg h-[calc(100vh-64px)] flex flex-col justify-center items-center text-center px-6 text-white shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-lg max-w-4xl leading-tight">Transform Your Outdoors with
+      Expert
+      Interlocking & Landscaping Services</h1>
+    <p class="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">Beautiful, durable, and customized landscaping
+      solutions that
+      elevate your home's exterior.</p>
+    <a href="#contact"
+      class="btn-primary mt-8 inline-block px-8 py-3 rounded font-semibold tracking-wide shadow-md hover:shadow-lg">Get
+      Your Free Quote</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Services</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center bg-white rounded-lg shadow-lg p-10 border border-gray-200">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4 w-14 h-14 feature-icon" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 10h18M3 6h18M3 14h18m-9 6v-4m0 0l3 3m-3-3l-3 3" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-900">Interlocking Installation</h3>
+        <p class="text-gray-600">Top-quality interlocking paving for driveways, patios, pathways — durable and
+          elegant.</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4 w-14 h-14 feature-icon" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M8 16s1-1 4-1 4 1 4 1M12 12v4m0-4a5 5 0 00-5-5m10 5a5 5 0 00-5-5" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-900">Landscaping Design & Maintenance</h3>
+        <p class="text-gray-600">From garden layout and planting to regular maintenance - keeping your yard vibrant
+          year-round.</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-4 w-14 h-14 feature-icon" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 21V7a2 2 0 00-2-2h-4l-3 4H5a2 2 0 00-2 2v6a2 2 0 002 2h14z" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-900">Custom Outdoor Features</h3>
+        <p class="text-gray-600">Retaining walls, fire pits, water features, lighting, and more tailored to your needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Projects/Portfolio -->
+  <section id="projects" class="bg-green-50 py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-green-900 mb-10 text-center">Recent Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5fc8e72f-34a3-422b-99ca-7025fc86c7ca.png"
+            alt="Modern interlocking driveway installed at a family home with lush greenery landscaping" class="w-full" />
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2 text-green-800">Elegant Driveway</h3>
+            <p class="text-gray-700">Installed durable interlocking stone driveway enhanced with decorative borders for
+              added style.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/45526c43-88eb-4827-ac13-293c797d582e.png"
+            alt="Beautiful landscaped garden featuring flower beds and stone path with well-maintained grass" class="w-full" />
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2 text-green-800">Lush Garden Landscape</h3>
+            <p class="text-gray-700">Full garden landscaping including planting, lawn care and building stone pathways for
+              accessibility.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e7d20082-aed6-41d9-abae-982962856c9e.png"
+            alt="Custom designed backyard fire pit surrounded by seating area with unique paving stones" class="w-full" />
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2 text-green-800">Custom Outdoor Feature</h3>
+            <p class="text-gray-700">Created a cozy backyard fire pit area with custom paving stones and built-in seating
+              for gatherings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-green-900">About A&A Interior and Landscaping</h2>
+    <p class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
+      At A&A Interior and Landscaping, we specialize in enhancing your outdoor spaces with quality interlocking paving
+      and holistic landscaping services. Our expertise and commitment to detail ensure your yard, driveway, or patio not
+      only looks beautiful but stands the test of time.
+      <br /><br />
+      Whether it’s a complete garden redesign or a simple pathway installation, we bring professionalism, creativity, and
+      care to every project. Based locally, we serve our community with passion and integrity.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-green-50 py-20 px-6">
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-10">
+      <h2 class="text-3xl font-bold mb-8 text-green-900 text-center">Contact Us</h2>
+      <p class="mb-6 text-center text-gray-700">Have questions or want a free quote? Reach out to us anytime!</p>
+      <form id="contact-form" class="space-y-6" onsubmit="return handleSubmit(event)">
+        <div>
+          <label for="name" class="block mb-2 font-semibold text-green-800">Full Name</label>
+          <input type="text" id="name" placeholder="Your Name" required
+            class="w-full px-4 py-2 border border-gray-300 rounded input-focus" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold text-green-800">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required
+            class="w-full px-4 py-2 border border-gray-300 rounded input-focus" />
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 font-semibold text-green-800">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 753 881 2700" pattern="\\+?\\d{7,15}" required
+            class="w-full px-4 py-2 border border-gray-300 rounded input-focus" />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold text-green-800">Message</label>
+          <textarea id="message" placeholder="Your message here..." rows="5" required
+            class="w-full px-4 py-2 border border-gray-300 rounded input-focus"></textarea>
+        </div>
+        <button type="submit"
+          class="btn-primary w-full py-3 font-semibold rounded shadow hover:shadow-lg transition">Send
+          Message</button>
+      </form>
+
+      <div class="mt-10 border-t pt-6 text-center text-green-900 font-semibold">
+        <p>Phone: <a href="tel:+17538812700" class="hover:underline text-green-800">+1 753-881-2700</a></p>
+        <p>Email: <a href="mailto:bhargavmohit0001@gmail.com" class="hover:underline text-green-800">bhargavmohit0001@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-green-200 py-8 mt-14 text-center font-light text-sm select-none">
+    © 2024 A&A Interior and Landscaping. All rights reserved.
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Handle contact form submission (mock)
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for contacting A&A Interior and Landscaping! We will get back to you soon.');
+      event.target.reset();
+      return false;
+    }
+  </script>
+</body>
+
+</html>
